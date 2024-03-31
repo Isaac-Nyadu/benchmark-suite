@@ -39,10 +39,12 @@ double floatOperationBenchmark() {
     double result = 100.0 / 2.0;    // Floating point division
 }
 
-    
-
-
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<milliseconds>(stop - start);
+    return duration.count() / 1000.0; // Convert to seconds
 }
+  
+
 
 
 int main() {
