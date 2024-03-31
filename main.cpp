@@ -50,6 +50,10 @@ double floatOperationBenchmark() {
 int main() {
     double intOpTime = intOperationBenchmark();
     cout << "32-bit Integer operation benchmark time: " << intOpTime << " seconds" << endl;
+
+    double floatOpTime = floatOperationBenchmark();
+    cout << "64-bit Floating point operation benchmark time: " << floatOpTime << " seconds" << endl;
+
     return 0;
 }
 
