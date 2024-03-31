@@ -24,6 +24,12 @@ for (long long i = 0; i < 2000000000; ++i) {
     return duration.count() / 1000.0; // Convert to seconds
 }
 
+double floatOperationBenchmark() {
+    auto start = high_resolution_clock::now();
+    // Placeholder for operations
+}
+
+
 int main() {
     double intOpTime = intOperationBenchmark();
     cout << "32-bit Integer operation benchmark time: " << intOpTime << " seconds" << endl;
