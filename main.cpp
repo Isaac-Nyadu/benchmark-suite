@@ -76,6 +76,15 @@ double hardDriveBenchmark1() {
     
     auto start = high_resolution_clock::now();
     // Placeholder for write and read operations
+    // Write 1GB data to file, 100 bytes at a time
+    
+    std::ofstream outFile("benchmark_file1.bin", ios::binary);
+    for(long long i = 0; i < fileSize; i += bufferSize) {
+        outFile.write(buffer, bufferSize);
+    }
+    outFile.close();
+
+    
     
 }
 
