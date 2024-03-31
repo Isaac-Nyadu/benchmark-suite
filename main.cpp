@@ -1,6 +1,7 @@
 #include <iostream>
 #include <chrono>
 #include <vector> 
+#include <fstream>
 
 using namespace std;
 using namespace chrono;
@@ -67,7 +68,16 @@ double memoryBenchmark() {
     return duration.count() / 1000.0; // Convert to seconds
 }
 
+
+double hardDriveBenchmark1() {
+    const long long fileSize = 1000000000; // 1 billion bytes
+    const int bufferSize = 100;
+    char buffer[bufferSize] = {0}; // Buffer for read/write operations
     
+    auto start = high_resolution_clock::now();
+    // Placeholder for write and read operations
+    
+}
 
 
 
