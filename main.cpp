@@ -35,6 +35,12 @@ double floatOperationBenchmark() {
     double result = 100.0 * 200.0;  // Floating point multiplication
 }
 
+    for (long long i = 0; i < 2000000000; ++i) {
+    double result = 100.0 / 2.0;    // Floating point division
+}
+
+    
+
 
 }
 
