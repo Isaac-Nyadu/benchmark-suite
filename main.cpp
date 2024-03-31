@@ -107,6 +107,10 @@ int main() {
     double memoryTime = memoryBenchmark();
     cout << "Memory benchmark time: " << memoryTime << " seconds" << endl;
 
+    double hdBenchmark1Time = hardDriveBenchmark1();
+    cout << "Hard drive benchmark 1 time: " << hdBenchmark1Time << " seconds" << endl;
+
+
 
     return 0;
 }
