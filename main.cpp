@@ -84,7 +84,13 @@ double hardDriveBenchmark1() {
     }
     outFile.close();
 
+    // Read the file back, 100 bytes at a time
+    std::ifstream inFile("benchmark_file1.bin", ios::binary);
+    while(inFile.read(buffer, bufferSize)) {}
+    inFile.close();
+
     
+
     
 }
 
