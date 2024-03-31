@@ -78,6 +78,10 @@ int main() {
     double floatOpTime = floatOperationBenchmark();
     cout << "64-bit Floating point operation benchmark time: " << floatOpTime << " seconds" << endl;
 
+    double memoryTime = memoryBenchmark();
+    cout << "Memory benchmark time: " << memoryTime << " seconds" << endl;
+
+
     return 0;
 }
 
