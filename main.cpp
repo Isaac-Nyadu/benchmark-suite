@@ -89,10 +89,11 @@ double hardDriveBenchmark1() {
     while(inFile.read(buffer, bufferSize)) {}
     inFile.close();
 
-    
-
-    
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<milliseconds>(stop - start);
+    return duration.count() / 1000.0; // Convert to seconds
 }
+
 
 
 
