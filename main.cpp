@@ -27,6 +27,11 @@ for (long long i = 0; i < 2000000000; ++i) {
 double floatOperationBenchmark() {
     auto start = high_resolution_clock::now();
     // Placeholder for operations
+    for (int i = 0; i < 1010; ++i) {
+    double result = 100.0 + 200.0;  // Floating point addition
+}
+
+    
 }
 
 
