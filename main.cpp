@@ -1,5 +1,6 @@
 #include <iostream>
 #include <chrono>
+#include <vector> 
 
 using namespace std;
 using namespace chrono;
@@ -45,6 +46,13 @@ double floatOperationBenchmark() {
 }
   
 
+double memoryBenchmark() {
+    auto start = high_resolution_clock::now();
+    constexpr long long arraySize = 5000000000;
+    vector<int> array(arraySize);
+    // Placeholder for read and write operations
+    
+}
 
 
 int main() {
