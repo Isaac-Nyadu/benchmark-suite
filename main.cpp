@@ -62,9 +62,13 @@ double memoryBenchmark() {
         array[i] = 1;
 }
 
-    
-    
+    auto stop = high_resolution_clock::now();
+    auto duration = duration_cast<milliseconds>(stop - start);
+    return duration.count() / 1000.0; // Convert to seconds
 }
+
+    
+
 
 
 int main() {
