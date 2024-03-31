@@ -51,6 +51,12 @@ double memoryBenchmark() {
     constexpr long long arraySize = 5000000000;
     vector<int> array(arraySize);
     // Placeholder for read and write operations
+
+    // Read benchmark
+    for (long long i = 0; i < arraySize; ++i) {
+        volatile int value = array[i];
+}
+
     
 }
 
