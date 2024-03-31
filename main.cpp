@@ -57,6 +57,12 @@ double memoryBenchmark() {
         volatile int value = array[i];
 }
 
+    // Write benchmark
+    for (long long i = 0; i < arraySize; ++i) {
+        array[i] = 1;
+}
+
+    
     
 }
 
